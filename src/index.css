@@ -1,0 +1,117 @@
+*{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  height: 100vh;
+  display: flex;
+}
+
+.left{
+  flex-basis: 5vw;
+  display: flex;
+  writing-mode:vertical-lr;
+  justify-content: space-around;
+}
+
+.right{
+  flex-basis: 95vw;
+}
+
+h3{
+  transform: rotate(180deg);
+  margin: 10px;
+  transition: all 1s;
+  border-left: none;
+  text-align: center;
+}
+
+h3:hover{
+  border-left: 3px solid orangered;
+  transition: all 500ms;
+  color: rgb(170, 170, 170);
+  cursor: none;
+}
+
+.backgroundOne, .backgroundTwo, .backgroundThree, img{
+  height: 100vh;
+  width: 97vw;
+  animation-name: opacity;
+  animation-duration: 1s;
+  border-radius: 60px 0px 0px 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes opacity{
+  from{right: -300px; opacity:0}
+  to{right: 0px; opacity:1}
+}
+
+/* img{
+  height: 90vh;
+} */
+
+.adjust{
+  margin-top: auto;
+}
+
+.new{
+  border-radius: 50%;
+}
+
+@keyframes shade {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+h4{
+  animation-name: shade;
+  animation-duration: 1s;
+  font-size: 100px;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(pink, yellow);
+  margin-top: 10px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid rgb(198, 198, 198); */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+form *{
+  margin: 10px;
+}
+
+input{
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+}
+
+button{
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  font-size: 70px;
+}
+
+.backgroundTwo, .backgroundThree{
+  border: 1px solid orangered;
+  border-radius: 20px 0px 0px 0px;
+}
